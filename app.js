@@ -25,8 +25,7 @@ window.addEventListener("load", () => {
         });
     });
   }else if(navigator.geolocation){
-      console.log("Grant location permissions");
+      console.log("Please, grant location permissions");
       document.getElementById("api-label").textContent = "Please, grant location permissions to continue developing. Tap me to reload after that.";
-      document.getElementById("api-label").href = "";
   }
 });
