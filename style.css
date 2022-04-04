@@ -27,6 +27,9 @@ body {
     color: white;
 }
 
+#api-label{
+    color: white;
+}
 /* This is the CSS for the location and temperature sections. The height is set to 30vh, which means
 that the section will take up 30% of the vertical space available to it. The width is set to 50%,
 which means that the section will take up 50% of the horizontal space available to it. The display
@@ -47,7 +50,6 @@ displayed in a column. */
 .temperature {
      flex-direction: column;
 }
-
 
 /* Setting some degree section rules to make the result prettier. */
 .degree-section {
