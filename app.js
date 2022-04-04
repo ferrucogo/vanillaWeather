@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
   let long, lat;
 
  /* It's checking if the browser supports geolocation. If it does, it will get the current position of the user. */
-  if (!navigator.geolocation) {
+  if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition((position) => {
       long = position.coords.longitude;
       lat = position.coords.latitude;
@@ -24,7 +24,7 @@ window.addEventListener("load", () => {
           console.log("Hey! That's your debugging data.\n" + data);
         });
     });
-  }else if(navigator.geolocation){
+  }else if(!navigator.geolocation){
       console.log("Please, grant location permissions");
       document.getElementById("api-label").textContent = "Please, grant location permissions to continue developing. Tap me to reload after that.";
   }
