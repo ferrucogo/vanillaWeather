@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* This is called a CSS selector. It is used to select all elements with the `*` tag. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* This is the CSS for the body of the webpage. It is used to set the height of the page to 100vh,
+which means that the page will take up all of the vertical space available to it. It also sets the
+display to flex, which means that the page will display its children in a row. The justify-content
+is set to center, which means that the children will be centered horizontally. The flex-direction is
+set to column, which means that the children will be displayed in a column. The align-items is set
+to center, which means that the children will be centered vertically. The background is set to a
+gradient, which means that the page will have a gradient background. The font-family is set to
+'Poppins', which is a font that I like to use. The color is set to white, which is the color of the
+text. */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* This is the CSS for the location and temperature sections. The height is set to 30vh, which means
+that the section will take up 30% of the vertical space available to it. The width is set to 50%,
+which means that the section will take up 50% of the horizontal space available to it. The display
+is set to flex, which means that the section will display its children in a row. The justify-content
+is set to space-around, which means that the children will be spaced out evenly. The align-items is
+set to center, which means that the children will be centered vertically. */
+.location,
+.temperature {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* This is setting the flex-direction to column, which means that the temperature section will be
+displayed in a column. */
+.temperature {
+     flex-direction: column;
+}
+
+
+/* Setting some degree section rules to make the result prettier. */
+.degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section span{
+   margin: 10px;
+   font-size: 30px;
+}
+
+.degree-section h2{
+    font-size: 40px;
+}
